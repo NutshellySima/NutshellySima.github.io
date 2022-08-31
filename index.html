@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chijun Sima</title>
     <meta name="description" content="Chijun Sima - Senior system software developer/researcher at Tencent">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
         data-cf-beacon='{"token": "74efc9100b074000b7c818e83d174ea4"}'></script><!-- End Cloudflare Web Analytics -->
@@ -92,6 +92,15 @@
                                                         </path>
                                                     </svg>
                                                 </button>
+<button type="button" class="btn btn-outline-primary" onclick="location.href='/cv.pdf'" aria-label="Chijun Sima's CV">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person"
+        viewBox="0 0 16 16">
+        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path
+            d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
+    </svg>
+</button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -176,13 +185,16 @@
                                     several
                                     recommenders.</p>
                                 <p class="card-text">• Designed and implemented Lightning, an SFI runtime powered by
-                                    WebAssembly. It is the first in the industry known to provide function-level
-                                    time/memory resource
-                                    constraints. It is later
+                                    WebAssembly. It is later
                                     used for implementing storage functions inside Tencent's multi-tenant storage
                                     services
                                     (e.g., Ekko/OSDI '22, PaxosStore/VLDB 2017). It is also in wide use as a serverless
-                                    runtime inside Tencent.</p>
+                                    runtime inside Tencent. Compared with previous solutions, it has tighter
+                                    resource control on tenants and is more scalable by leveraging tiered compilation and compilation cache techniques.</p>
+                                    <p class="card-text">• Designed Ekko Elastic by incorporating a model shard placement scheduler inside Ekko. It
+                                        provisions
+                                        machines by using operation research techniques on resource requirements of different ML models. It helps cut the
+                                        cluster cost by up to 30% compared to static provisioning.</p>
                                 <p class="card-text">• Implemented a consensus algorithm library with WAN optimizations
                                     (e.g.,
                                     parallel phase
@@ -206,17 +218,11 @@
                                     preserve
                                     the
                                     dominator tree along the optimization pipeline. (Speed up real-world samples up to
-                                    1980x.)
-                                </p>
-                                <p class="card-text">• Created an algorithm to identify and deduplicate valid CFG
-                                    changes
-                                    for
-                                    dominators.
+                                    1980x.) Relevant changes were committed to LLVM 9.0.
                                 </p>
                                 <p class="card-text">• Unified API for updating Dominators in LLVM.
                                     The new API
-                                    was committed to LLVM 7.0 and is in wide use. Mentored by Jakub Kuderski and Brian
-                                    Rzycki.
+                                    was committed to LLVM 7.0 and is in wide use. Mentored by Jakub Kuderski.
                                 </p>
                             </div>
                         </div>
@@ -231,8 +237,8 @@
             <span class="text-muted">© 2022 Chijun Sima.</span>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
 
